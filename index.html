@@ -52,6 +52,7 @@
   </h2>
 
     <div class="column" style="margin-top: 30px; width: fit-content; height: fit-content;">
+
       <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas" width=960 height=600></canvas>
         <div id="unity-loading-bar">
@@ -62,39 +63,12 @@
         </div>
         <div id="unity-warning"> </div>
         <div id="unity-footer">
+          <div id="unity-webgl-logo"></div>
           <div id="unity-fullscreen-button"></div>
           <div id="unity-build-title">QuestForMac</div>
         </div>
       </div>
-
-      <h3>
-        <strong>
-          How to Use
-        </strong>
-      </h3>
-
-      <p>
-        <strong>
-          A,D, and Space to move
-        </strong>
-      </p>
-
-      <p>
-        <strong>
-          This game features Coyote Time Jumps 
-        </strong>
-      </p>
-
-      <p>
-        <strong>
-          If you press QUIT, you must reload the page to play again. 
-        </strong>
-      </p>
-
-    </div>  
-
-    
-
+    </div>
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -128,11 +102,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/QuestForMac.loader.js";
+      var loaderUrl = buildUrl + "/QuestForMacNew.loader.js";
       var config = {
-        dataUrl: buildUrl + "/QuestForMac.data.unityweb",
-        frameworkUrl: buildUrl + "/QuestForMac.framework.js.unityweb",
-        codeUrl: buildUrl + "/QuestForMac.wasm.unityweb",
+        dataUrl: buildUrl + "/QuestForMacNew.data.unityweb",
+        frameworkUrl: buildUrl + "/QuestForMacNew.framework.js.unityweb",
+        codeUrl: buildUrl + "/QuestForMacNew.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Bread Sandwich Games",
         productName: "QuestForMac",
